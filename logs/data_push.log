@@ -1,0 +1,442 @@
+2018-09-26 10:43:00,551 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:43:10,569 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:43:20,580 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:43:30,598 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:43:40,610 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:43:50,627 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:44:00,646 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:44:10,659 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:44:20,670 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:44:30,688 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:44:40,700 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:44:50,718 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:45:00,737 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:45:10,755 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 26, in push
+    res = self.oracle_ins._getOne(sql)
+  File "/usr/local/data_push/database/oracle.py", line 61, in _getOne
+    self._cursor.execute(sql)
+DatabaseError: ORA-04063: view "CC330212333.GY_PAYINFOPOS" 有错误
+
+2018-09-26 10:46:26,822 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 976994, insert 16 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:46:37,007 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977010, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:46:47,186 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977011, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:46:57,371 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977012, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:47:07,606 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977014, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:47:17,794 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977015, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:47:27,970 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977017, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:47:38,131 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977019, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:47:48,321 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977020, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:47:58,479 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977021, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:48:08,688 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977022, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:48:18,837 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977023, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:48:29,020 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977023, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:48:39,167 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977023, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:48:49,316 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977023, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:48:59,508 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977023, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:49:09,632 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977023, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:49:19,763 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977023, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:49:29,928 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977023, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:49:40,070 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977025, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:49:50,152 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977025, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:50:00,326 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977025, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:50:10,487 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977026, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:50:20,669 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977026, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:50:30,764 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977028, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:50:40,853 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977029, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:50:50,997 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977030, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:51:01,156 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977030, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:51:11,334 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977030, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:51:21,500 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977030, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:51:31,661 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977031, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:51:41,838 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977031, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:51:52,008 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977033, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:52:02,221 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977034, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:52:12,409 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977036, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:52:22,572 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977037, insert 3 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:52:32,724 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977040, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:52:42,912 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977040, insert 3 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:52:53,159 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977043, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:53:03,370 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977044, insert 3 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:53:13,556 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977047, insert 3 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:53:23,734 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977050, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:53:33,877 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977051, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:53:44,031 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977051, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:53:54,235 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977051, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:54:04,466 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977052, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:54:14,657 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977052, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:54:24,845 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977054, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:54:35,031 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977055, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:54:45,188 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977056, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:54:55,830 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977056, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:55:06,285 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977056, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:55:16,589 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977057, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:55:26,756 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977057, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:55:36,946 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977059, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:55:47,133 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977060, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:55:57,311 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977060, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:56:07,483 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977060, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:56:17,659 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977062, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:56:27,818 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977062, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:56:37,986 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977062, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:56:48,178 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977064, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:56:58,295 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977064, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:57:08,441 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977064, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:57:18,610 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977064, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:57:28,800 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977064, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:57:38,959 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977065, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:57:49,130 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977065, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:57:59,304 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977067, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:58:09,463 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977069, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:58:19,650 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977070, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:58:29,810 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977072, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:58:39,969 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977073, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:58:50,106 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977073, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:59:01,591 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977073, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:59:11,795 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977074, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:59:21,931 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977074, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:59:32,071 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977074, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:59:42,261 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977074, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 10:59:52,447 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977075, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:00:02,639 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977077, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:00:23,902 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:00:23,925 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977079, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:00:33,954 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:00:34,107 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977080, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:00:43,989 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:00:44,275 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977081, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:00:54,527 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:00:54,790 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977082, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:01:04,558 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:01:04,929 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977082, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:01:14,594 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:01:15,101 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977082, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:01:24,629 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:01:25,287 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977082, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:01:34,666 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:01:35,484 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977084, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:01:44,700 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:01:45,656 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977084, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:01:54,727 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:01:56,111 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977085, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:02:04,761 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:02:06,530 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977087, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:02:14,791 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:02:16,679 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977088, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:02:24,829 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:02:26,771 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977088, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:02:34,866 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:02:36,912 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977088, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:02:44,898 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:02:47,100 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977088, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:02:54,927 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:02:57,250 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977089, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:03:04,960 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:03:07,385 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977089, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:03:14,996 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:03:17,622 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977089, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:03:25,022 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:03:27,791 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977090, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:03:35,054 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:03:37,964 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977090, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:03:45,090 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:03:48,155 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977090, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:03:55,920 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:03:58,448 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977091, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:04:06,214 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:04:08,607 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977092, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:04:16,498 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:04:18,764 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977092, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:04:26,557 - ERROR - mysql --- execute sql error:
+Traceback (most recent call last):
+  File "/usr/local/data_push/push_records/trans_records.py", line 38, in push
+    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+  File "/usr/local/data_push/database/oracle.py", line 82, in _insertOne
+    self._cursor.execute(sql, value)
+IntegrityError: ORA-01400: 无法将 NULL 插入 (???)
+
+2018-09-26 11:04:28,947 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977092, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:04:37,530 - INFO - Max id of cc330212333.gy_payinfopos is 0, insert 100 records into cc330212333.gy_payinfopos !
+2018-09-26 11:04:39,117 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977094, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:04:48,018 - INFO - Max id of cc330212333.gy_payinfopos is 100, insert 100 records into cc330212333.gy_payinfopos !
+2018-09-26 11:04:49,290 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977094, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:04:58,563 - INFO - Max id of cc330212333.gy_payinfopos is 200, insert 100 records into cc330212333.gy_payinfopos !
+2018-09-26 11:04:59,426 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977095, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:05:09,098 - INFO - Max id of cc330212333.gy_payinfopos is 300, insert 100 records into cc330212333.gy_payinfopos !
+2018-09-26 11:05:09,603 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977095, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:05:19,285 - INFO - Max id of cc330212333.gy_payinfopos is 400, insert 33 records into cc330212333.gy_payinfopos !
+2018-09-26 11:05:19,760 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977095, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:05:29,302 - INFO - Max id of cc330212333.gy_payinfopos is 433, insert 0 records into cc330212333.gy_payinfopos !
+2018-09-26 11:05:29,895 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977095, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:05:39,322 - INFO - Max id of cc330212333.gy_payinfopos is 433, insert 0 records into cc330212333.gy_payinfopos !
+2018-09-26 11:05:40,056 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977095, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:05:49,342 - INFO - Max id of cc330212333.gy_payinfopos is 433, insert 0 records into cc330212333.gy_payinfopos !
+2018-09-26 11:05:50,243 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977095, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:05:59,362 - INFO - Max id of cc330212333.gy_payinfopos is 433, insert 0 records into cc330212333.gy_payinfopos !
+2018-09-26 11:06:00,411 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977095, insert 0 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:06:09,380 - INFO - Max id of cc330212333.gy_payinfopos is 433, insert 0 records into cc330212333.gy_payinfopos !
+2018-09-26 11:06:10,618 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977095, insert 1 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:06:19,401 - INFO - Max id of cc330212333.gy_payinfopos is 433, insert 0 records into cc330212333.gy_payinfopos !
+2018-09-26 11:06:20,826 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977096, insert 2 records into cc330212333.gy_retail_market_tran_summ !
+2018-09-26 11:06:29,422 - INFO - Max id of cc330212333.gy_payinfopos is 433, insert 0 records into cc330212333.gy_payinfopos !
+2018-09-26 11:06:31,033 - INFO - Max id of cc330212333.gy_retail_market_tran_summ is 977098, insert 2 records into cc330212333.gy_retail_market_tran_summ !
