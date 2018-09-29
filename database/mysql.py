@@ -2,10 +2,10 @@
 #
 # author : zhangning
 
+import traceback
 import pymysql
 from pymysql.cursors import DictCursor
 # from DBUtils.PooledDB import PooledDB
-import traceback
 
 class Mysql(object):
     def __init__(self, host, port, user, passwd, database, charset, logger=None):
@@ -18,36 +18,37 @@ class Mysql(object):
         self.logger = logger
         self._conn = None
         self._cursor = None
-        self._connectDB()
+        self.connect_db()
 
-    def _connectDB(self):
+    def connect_db(self):
         try:
             self._conn = pymysql.connect(host=self.host, port=self.port, user=self.user, passwd=self.passwd,
                                 database=self.database, use_unicode=False, charset=self.charset, cursorclass=DictCursor
                                 )
             self._cursor = self._conn.cursor()
             return True
+
         except Exception as e:
             if self.logger is not None:
                 logger_info = 'connect mysql failed\n %s' % (traceback.format_exc())
                 self.logger.error(logger_info)
             return False
 
-    def _connPing(self):
+    def conn_ping(self):
         try:
             self._conn.ping()
             return True
         except:
             return False
 
-    def _check_db_conn(self):
-        if self._connPing() == False:
+    def check_db_conn(self):
+        if self.conn_ping() is False:
             while True:
                 if self.logger is not None:
                     self.logger.info('cannot connect to mysql,try to reconnect mysql!')
 
-                self._connectDB()
-                if self._connPing() == True:
+                self.connect_db()
+                if self.conn_ping() is True:
                     if self.logger is not None:
                         self.logger.info('reconnect mysql succeeded!')
                     break
@@ -58,72 +59,66 @@ class Mysql(object):
             pass
 
     #获取Select的SQL语句
-    def _getSelectSQL(self, table_name, column_name, max_id, row_num):
+    def get_select_sql(self, table_name, column_name, max_id, row_num):
         sql = 'select * from %s where %s > %s order by %s limit %s' % (table_name, column_name, max_id, column_name, row_num)
         return sql
 
-    def _selectOne(self, sql):
-        self._check_db_conn()
+    def select_one(self, sql):
+        self.check_db_conn()
         self._cursor.execute(sql)
         res = self._cursor.fetchone()
-        self._commit()
+        self.commit()
         return res
 
-    def _selectALL(self, sql):
-        self._check_db_conn()
+    def select_all(self, sql):
+        self.check_db_conn()
         self._cursor.execute(sql)
         res = self._cursor.fetchall()
-        self._commit()
+        self.commit()
         return res
 
-    def get_sql(self, table_name, fields=None, condition_fields=None):
-        values = list()
-        if fields is not None:
-            fields = ','.join(fields)
-        else:
-            fields = '*'
+    def check_record(self, table_name, where_dict):
+        where_fiedls = []
+        where_values = []
 
-        if condition_fields is not None:
-            where_list = []
-            for k, v in condition_fields.iteritems():
-                item = "%s=%s" % (k, '%s')
-                where_list.append(item)
-                values.append(v)
+        for k, v in where_dict.iteritems():         #python3的items对应 python2.7的iteritems，返回一个迭代器
+            where_fiedls.append(k)
+            where_values.append(v)
 
-            where_condition = ' and '.join(where_list)
-            return 'select %s from %s where %s' % (fields, table_name, where_condition), values
-        else:
-            return 'select %s from %s' % (fields, table_name), values
-
-    def _checkRecord(self, table_name, where_dict):
-        # for k, v in where_dict:
-            
-        where_fiedls = ' and '.join(map(lambda x: '%s=%%s' % x, value_dict.keys()))   
+        where_fiedls = ' and '.join(map(lambda x: '%s=%%s' % x, where_fiedls))
         sql = 'select count(1) cnt from %s where %s' % (table_name, where_fiedls)
-        print sql
-        self._cursor.execute(sql, value_dict)
+
+        self._cursor.execute(sql, where_values)
         res = self._cursor.fetchone()
-        self._commit()
-        return res
+        self.commit()
 
+        if res['cnt'] > 0:
+            return True
+        else:
+            return False
 
-    def _getInsertSQL(self, table_name, value_dict):
-    # The Type of value_dict is dictionary
+    def get_insert_sql(self, table_name, value_dict):
+        """
+        :param table_name:
+        :param value_dict:
+        :type value_dict: dict
+        :return:
+        """
         fields = ','.join(value_dict.keys())
         val_fields = ','.join(map(lambda x: '%s', value_dict.keys()))
         sql = 'insert into %s(%s) values(%s)' % (table_name, fields, val_fields)
         return sql
 
     # 插入一条记录
-    def _insertOne(self, sql, value):
-        self._check_db_conn()
+    def isnert_one(self, sql, value):
+        self.check_db_conn()
         self._cursor.execute(sql, value)
 
     # 提交操作
-    def _commit(self):
+    def commit(self):
         self._conn.commit()
 
     # 关闭数据库连接
-    def _close(self):
+    def close(self):
         self._cursor.close()
         self._conn.close()

@@ -23,20 +23,20 @@ class myProcess(object):
         while True:
             try:
                 sql = "select max(%s) id from %s.%s where retail_id=%s" % (self.column_name, self.ins_prefix, self.table_name_ins, self.retail_id)
-                res = self.oracle_ins._getOne(sql)
+                res = self.oracle_ins.select_one(sql)
                 if res[0] is None:
                     _max_id = 0
                 else:
                     _max_id = res[0]
-                sql = self.mysql_sel._getSelectSQL(self.sel_prefix+'.'+self.table_name_sel, self.column_name, _max_id, self.row_number)
-                res = self.mysql_sel._getALL(sql)
+                sql = self.mysql_sel.get_select_sql(self.sel_prefix+'.'+self.table_name_sel, self.column_name, _max_id, self.row_number)
+                res = self.mysql_sel.select_all(sql)
                 _records = len(res)
                 for i in res:
-                    # sql = self.oracle_ins._getInsertSQL(self.ins_prefix + '.' + self.table_name_ins, i)
+                    # sql = self.oracle_ins.get_insert_sql(self.ins_prefix + '.' + self.table_name_ins, i)
                     # print sql
-                    # self.oracle_ins._insertOne(sql, i.values())
-                    self.oracle_ins._insertOne(self.oracle_ins._getInsertSQL(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
-                self.oracle_ins._conn.commit()
+                    # self.oracle_ins.insert_one(sql, i.values())
+                    self.oracle_ins.insert_one(self.oracle_ins.get_insert_sql(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
+                self.oracle_ins.commit()
 
                 # print "Max id of %s.%s is %s, insert %s records into %s.%s !" % (self.ins_prefix, self.table_name_ins, _max_id, _records, self.ins_prefix, self.table_name_ins)
                 self.logger.info("Max id of %s.%s is %s, insert %s records into %s.%s !" % (self.ins_prefix, self.table_name_ins, _max_id, _records, self.ins_prefix, self.table_name_ins))
