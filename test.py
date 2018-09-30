@@ -1,13 +1,54 @@
 from database.oracle import Oracle
 from database.mysql import Mysql
-# oracle = Oracle(host='10.1.23.167', port=1521, user='book', password='book', sid='orcl')
+oracle = Oracle(host='10.1.23.167', port=1521, user='book', password='book', sid='orcl')
 # oracle1 = Oracle(host='10.1.123.160', port=1521, user='cc330212333', password='peb2d2e131c0d', sid='prod')
-# mysql = Mysql(host='10.1.23.167', port=3306, user='vgt', passwd='vgt201709', database='vegetable', charset='utf8')
-mysql = Mysql(host='127.0.0.1', port=13306, user='vgt', passwd='vgt201709', database='vegetable', charset='utf8')
+mysql = Mysql(host='10.1.23.167', port=3306, user='vgt', passwd='vgt201709', database='vegetable', charset='utf8')
+# mysql = Mysql(host='127.0.0.1', port=13306, user='vgt', passwd='vgt201709', database='vegetable', charset='utf8')
 
 # res = oracle1.select_all('select * from gy_business_base_info')
-# # print oracle1._cursor.description
-# # res = oracle1._cursor.fetchall()
+# oracle.insert_many('gy_business_base_info', res)
+#
+# res1 = oracle.select_all('select * from gy_business_base_info')
+# for i in res1:
+#     print i
+
+# dict1 = {'id': 1, 'name': 'spark'}
+# print dict1.items()
+# mysql._cursor.executemany('update test_upd set name=%s,value=%s where id=%s',
+#                       [('spark 2.0', 12, 1), ('spark 3.0', 10, 2)])
+# #mysql._cursor.executemany('update test_upd set name=%(name)s,value=%(value)s where id=%(id)s', [{'value': 15, 'id': 1, 'name': 'spark 3.0'}, {'value': 16, 'id': 2, 'name': 'hadoop 2.0'}])
+# mysql._conn.commit()
+
+value_dict = [{'value': 9, 'id': 1, 'name': 'spark 2.0'}, {'value': 8, 'id': 2, 'name': 'hadoop 2.2'}]
+# mysql._cursor.executemany('delete from test_upd1 where id=%(id)s', value_dict)
+# mysql._conn.commit()
+# set_fields = ['value', 'name']
+# where_fields = ['id']
+# print mysql.update(value_dict, 'test_upd', set_fields, where_fields)
+#
+# res = mysql.select_all('select * from test_upd')
+# mysql.insert_many('test_upd1', res)
+# mysql.update([{'value': 1}], 'test_upd1', ['value'])
+# # mysql.delete('test_upd1', ['id', 'name'], value_dict)
+# # mysql.delete('test_upd1')
+# res = mysql.select_all('select * from test_upd1')
+# for i in res:
+#     print i
+
+
+
+# dict1 = {'value': 15, 'id': 1, 'name': 'spark 3.0'}
+# print dict1.keys()
+# print map(lambda x: '%%(%s)s' % x, dict1.keys())
+
+# mysql.sync_data('gy_business_base_info', ['BIZ_ID'], res1)
+dict1 = [{'update_time'.upper(): '20180930', 'err'.upper(): 'None', 'BIZ_ID': '3302123330001', 'record_node_id'.upper(): '330212333'}]
+print type(dict1),len(dict1)
+
+sub_dict1 = [(key, dict1[0].get(key)) for key in ['BIZ_ID', 'record_node_id'.upper()]]
+print dict(sub_dict1)
+
+# print oracle1._cursor.description
 # print len(res)
 # print '------------------'
 # t = []
@@ -23,7 +64,7 @@ mysql = Mysql(host='127.0.0.1', port=13306, user='vgt', passwd='vgt201709', data
 
 # print mysql.check_record('busiinfo',{'busiInfoID': '3302123330010'})
 
-print mysql.check_record('busiinfo', {'busiInfoID': '3302123330001'})
+# print mysql.check_record('busiinfo', {'busiInfoID': '3302123330001'})
 # ins_data = [{'name': 'Hadoop 2.0', 'is_deleted': 0}, {'name': 'SPARK 2.1', 'is_deleted': 0}]
 # sql = 'insert into books_bookinfo(name,is_deleted) values(:name,:is_deleted)'
 # # oracle._cursor.executemany(sql, ins_data)
@@ -72,5 +113,5 @@ print mysql.check_record('busiinfo', {'busiInfoID': '3302123330001'})
 # for i in res:
 #     print i
 # oracle1.close()
-# oracle.close()
+oracle.close()
 mysql.close()

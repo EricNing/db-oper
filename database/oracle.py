@@ -99,7 +99,7 @@ class Oracle(object):
         sql = 'insert into %s(%s) values(%s)' % (table_name, fields, val_fields)
         self.check_db_conn()
         self._cursor.execute(sql, value_dict)
-        self._commit()
+        self.commit()
         # cursor_pre = self._cursor.prepare(sql)
         # cursor_pre.execute(None, argsDict)   -- argsDict:字典类型
 
@@ -124,13 +124,12 @@ class Oracle(object):
         sql = 'insert into %s(%s) values(%s)' % (table_name, fields, val_fields)
         self.check_db_conn()
         self._cursor.executemany(sql, value_dict)
-        self._commit()
+        self.commit()
 
-    # 更新操作, 批量更新，传入字典列表
     def update(self, value_dict, table_name, set_fields, where_fields=None):
         """
         Param Type
-            value : list of dict
+            value : sequences(list) of mapping(dict)
             set_fields : list     ['name',...]
             where_fields : list   ['id']
             table_name : str
@@ -144,34 +143,39 @@ class Oracle(object):
             oracle._cursor.executemany(sql, value)
         """
         set_sql = ','.join(map(lambda x: '%s=:%s' % (x, x), set_fields))
-        where_sql = ','.join(map(lambda x: '%s=:%s' % (x, x), where_fields))
-        sql = 'update %s set %s where %s' % (table_name, set_sql, where_sql)
+
+        if where_fields is None:
+            sql = 'update %s set %s' % (table_name, set_sql)
+        else:
+            where_sql = ','.join(map(lambda x: '%s=:%s' % (x, x), where_fields))
+            sql = 'update %s set %s where %s' % (table_name, set_sql, where_sql)
         self.check_db_conn()
         self._cursor.executemany(sql, value_dict)
-        self._commit()
+        self.commit()
 
-    # 删除操作
-    # 单条记录匹配删除
-    def delete(self, table_name, where_fields, value_dict):
+    def delete(self, table_name, where_fields=None, value_dict=None):
         """
         :param table_name:
         :param where_fields:
         :param value_dict:
+
         :type where_fields: list, ['col_1', ...,'col_n']
         :type value_dict: dict, {col1: val1, ..., coln: valn}
         :return:
         """
+        if where_fields is None and value_dict is None:
+            sql = 'delete from %s' % table_name
+            self._cursor.execute(sql)
+        else:
+            where_fields = ' and '.join(map(lambda x: '%s=:%s' % (x, x), where_fields))
+            sql = 'delete from %s where %s' % (table_name, where_fields)
+            self._cursor.execute(sql, value_dict)
+        self.commit()
 
-        where_fields = ','.join(map(lambda x: '%s=:%s' % (x, x), where_fields))
-        sql = 'delete from %s where %s' % (table_name, where_fields)
-        self._cursor.execute(sql, value_dict)
-        self._commit()
-
-    # 提交操作
     def commit(self):
         self._conn.commit()
 
-    # 关闭数据库连接
+    # close the db connection
     def close(self):
         self._cursor.close()
         self._conn.close()
