@@ -42,11 +42,32 @@ value_dict = [{'value': 9, 'id': 1, 'name': 'spark 2.0'}, {'value': 8, 'id': 2, 
 # print map(lambda x: '%%(%s)s' % x, dict1.keys())
 
 # mysql.sync_data('gy_business_base_info', ['BIZ_ID'], res1)
-dict1 = [{'update_time'.upper(): '20180930', 'err'.upper(): 'None', 'BIZ_ID': '3302123330001', 'record_node_id'.upper(): '330212333'}]
-print type(dict1),len(dict1)
+# dict1 = [{'update_time'.upper(): '20180930', 'err'.upper(): 'None', 'BIZ_ID': '3302123330001', 'record_node_id'.upper(): '330212333'}]
+# print type(dict1), len(dict1)
+#
+# sub_dict1 = [(key, dict1[0].get(key)) for key in ['BIZ_ID', 'record_node_id'.upper()]]
+# print dict(sub_dict1)
+#
+# dict2 = {'name': 'b', 'id': 2}
+# mysql.update_one(dict2, 'tmp2', ['name'], ['id'])
 
-sub_dict1 = [(key, dict1[0].get(key)) for key in ['BIZ_ID', 'record_node_id'.upper()]]
-print dict(sub_dict1)
+# dict3 = [{'name': 'bbb', 'id': 2, 'sex': 'm'}, {'name': 'aaa', 'id': 1, 'sex': 'm'}]
+# mysql.update_many(dict3, 'tmp2', ['name'], ['id', 'sex'])
+
+# dict4 = [{'id': 2, 'sex': 'm'}, {'id': 1, 'sex': 'f'}]
+# mysql.delete_many('tmp2', ['id', 'sex'], dict4)
+
+# dict5 = {'name': 'ddd', 'id': 4, 'sex': 'm'}
+# mysql.insert_one('tmp2', dict5)
+# mysql._cursor.execute('select * from tmp2')
+# res = mysql._cursor.fetchall()
+# print res
+#
+#
+# res = mysql.check_record({'id': 4, 'name': 'ddd'}, 'tmp2', ['id'])
+# print res
+
+mysql.sync_data([{'id': 4, 'name': 'ddd'}, {'id': 5, 'name': 'fff'}], 'tmp2', ['id'], None)
 
 # print oracle1._cursor.description
 # print len(res)
