@@ -31,17 +31,10 @@ class myProcess(object):
                 sql = self.mysql_sel.get_select_sql(self.sel_prefix+'.'+self.table_name_sel, self.column_name, _max_id, self.row_number)
                 res = self.mysql_sel.select_all(sql)
                 _records = len(res)
-                for i in res:
-                    # sql = self.oracle_ins.get_insert_sql(self.ins_prefix + '.' + self.table_name_ins, i)
-                    # print sql
-                    # self.oracle_ins.insert_one(sql, i.values())
-                    self.oracle_ins.insert_one(self.oracle_ins.get_insert_sql(self.ins_prefix+'.'+self.table_name_ins, i), i.values())
-                self.oracle_ins.commit()
-
-                # print "Max id of %s.%s is %s, insert %s records into %s.%s !" % (self.ins_prefix, self.table_name_ins, _max_id, _records, self.ins_prefix, self.table_name_ins)
+                self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
                 self.logger.info("Max id of %s.%s is %s, insert %s records into %s.%s !" % (self.ins_prefix, self.table_name_ins, _max_id, _records, self.ins_prefix, self.table_name_ins))
             except Exception as e:
-                logger_info = 'mysql --- execute sql error:\n%s' % (traceback.format_exc())
+                logger_info = 'execute sql error:\n%s' % (traceback.format_exc())
                 self.logger.error(logger_info)
             finally:
                 time.sleep(self.interval)

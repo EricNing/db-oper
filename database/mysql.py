@@ -5,6 +5,7 @@
 import traceback
 import pymysql
 from pymysql.cursors import DictCursor
+import time
 # from DBUtils.PooledDB import PooledDB
 
 class Mysql(object):
@@ -55,6 +56,7 @@ class Mysql(object):
                 else:
                     if self.logger is not None:
                         self.logger.info('reconnect mysql failed!')
+                time.sleep(30)
         else:
             pass
 

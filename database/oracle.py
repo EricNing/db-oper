@@ -4,6 +4,7 @@
 
 import cx_Oracle
 import traceback
+import time
 
 class Oracle(object):
     def __init__(self, host, port, user, password, sid, logger=None):
@@ -55,6 +56,7 @@ class Oracle(object):
                 else:
                     if self.logger is not None:
                         self.logger.info('reconnect Oracle failed!')
+                time.sleep(30)
         else:
             pass
 
