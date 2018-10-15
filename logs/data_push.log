@@ -218,3 +218,683 @@ DatabaseError: DPI-1047: 64-bit Oracle Client library cannot be loaded: "The spe
 DatabaseError: DPI-1047: 64-bit Oracle Client library cannot be loaded: "The specified module could not be found". See https://oracle.github.io/odpi/doc/installation.html#windows for help
 
 2018-10-16 00:06:19,681 - INFO - reconnect Oracle failed!
+2018-10-16 00:37:19,898 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:37:19,898 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:37:30,003 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:37:30,007 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:37:40,108 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:37:40,117 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:39:34,392 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:39:34,451 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:39:44,496 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:39:44,522 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:39:54,601 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:39:54,601 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:40:04,673 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:40:04,710 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:40:14,744 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:40:14,862 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:40:24,813 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:40:24,967 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:40:34,887 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:40:35,078 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:40:44,971 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:40:45,204 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:40:55,079 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:40:55,342 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:41:05,148 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:41:05,450 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:41:15,217 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:41:15,559 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:41:25,288 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:41:25,664 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:41:35,357 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:41:35,767 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:41:45,428 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:41:45,878 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:41:55,499 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:41:55,984 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:42:05,584 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:42:06,148 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:42:15,665 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:42:16,272 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 26, in push
+    res = self.oracle_ins.select_one(sql)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 72, in select_one
+    self._cursor.execute(sql)
+DatabaseError: ORA-00942: 表或视图不存在
+
+2018-10-16 00:42:20,191 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:42:30,265 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:42:40,331 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:42:50,403 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res[0] is None:
+KeyError: 0
+
+2018-10-16 00:43:00,470 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res['id'] is None:
+KeyError: 0
+
+2018-10-16 00:43:03,721 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res['id'] is None:
+KeyError: 'id'
+
+2018-10-16 00:43:13,792 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res['id'] is None:
+KeyError: 'id'
+
+2018-10-16 00:43:23,861 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res['id'] is None:
+KeyError: 'id'
+
+2018-10-16 00:43:33,934 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res['id'] is None:
+KeyError: 'id'
+
+2018-10-16 00:43:44,002 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    if res['id'] is None:
+KeyError: 'id'
+
+2018-10-16 00:43:54,071 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 27, in push
+    print res
+KeyError: 'id'
+
+2018-10-16 00:45:10,013 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 28, in push
+    if res['id'] is None:
+KeyError: 'id'
+
+2018-10-16 00:45:20,085 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 28, in push
+    if res['id'] is None:
+KeyError: 'id'
+
+2018-10-16 00:45:39,042 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 0, insert 100 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:45:49,118 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:45:59,187 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:46:09,263 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:46:19,332 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:46:29,414 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:46:39,509 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:46:49,582 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:46:59,650 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:47:09,720 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:47:19,789 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:47:29,855 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:47:39,926 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:47:49,994 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 30, in push
+    _max_id = res[0]
+KeyError: 0
+
+2018-10-16 00:47:58,516 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411099, insert 100 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:48:08,970 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411199, insert 100 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:48:19,392 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411299, insert 59 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:48:29,565 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 34, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:48:39,736 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 34, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:48:49,959 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 34, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:49:00,128 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 34, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:49:10,671 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 34, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:49:20,842 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 34, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:49:31,094 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 34, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:49:41,312 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 34, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:49:51,496 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 34, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:50:01,673 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 34, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:50:14,358 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:50:24,529 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:50:34,729 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:50:44,936 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:50:55,115 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:51:05,302 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:51:15,479 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:51:25,680 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:55:36,141 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 0, insert 100 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:55:44,486 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411099, insert 100 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:55:57,055 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411199, insert 100 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:56:08,753 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411299, insert 59 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:56:18,928 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:56:29,107 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:56:39,280 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:56:49,469 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:56:59,759 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:57:09,937 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:57:20,134 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:57:30,345 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:57:40,525 - ERROR - execute sql error:
+Traceback (most recent call last):
+  File "E:\mygit_pro\record-sync\push_records\trans_records.py", line 35, in push
+    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+  File "E:\mygit_pro\record-sync\database\oracle.py", line 124, in insert_many
+    fields = ','.join(value_dict[0].keys())
+IndexError: tuple index out of range
+
+2018-10-16 00:57:56,792 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 0, insert 100 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:58:07,171 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411099, insert 100 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:58:17,585 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411199, insert 100 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:58:27,937 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411299, insert 59 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:58:38,117 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411358, insert 0 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:58:48,311 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411358, insert 0 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:58:58,525 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411358, insert 0 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:59:09,028 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 0, insert 100 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:59:19,496 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411099, insert 100 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:59:29,954 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411199, insert 100 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:59:40,299 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411299, insert 59 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 00:59:50,469 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411358, insert 0 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 01:00:00,668 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411358, insert 0 records into zabbix.gy_retail_market_tran_summ !
+2018-10-16 01:00:10,888 - INFO - Max id of zabbix.gy_retail_market_tran_summ is 411358, insert 0 records into zabbix.gy_retail_market_tran_summ !

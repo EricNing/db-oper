@@ -24,14 +24,15 @@ class myProcess(object):
             try:
                 sql = "select max(%s) id from %s.%s where retail_id=%s" % (self.column_name, self.ins_prefix, self.table_name_ins, self.retail_id)
                 res = self.oracle_ins.select_one(sql)
-                if res[0] is None:
+                if res['ID'] is None:
                     _max_id = 0
                 else:
-                    _max_id = res[0]
+                    _max_id = res['ID']
                 sql = self.mysql_sel.get_select_sql(self.sel_prefix+'.'+self.table_name_sel, self.column_name, _max_id, self.row_number)
                 res = self.mysql_sel.select_all(sql)
                 _records = len(res)
-                self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+                if _records != 0:
+                    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
                 self.logger.info("Max id of %s.%s is %s, insert %s records into %s.%s !" % (self.ins_prefix, self.table_name_ins, _max_id, _records, self.ins_prefix, self.table_name_ins))
             except Exception as e:
                 logger_info = 'execute sql error:\n%s' % (traceback.format_exc())

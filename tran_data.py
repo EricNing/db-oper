@@ -56,10 +56,10 @@ if __name__ == "__main__":
     logger = cf.get('logfile', 'logfile')
 
     p_tranrecords = Process(target=trans_push, args=(mysql_settings, oracle_settings, logger, _tran_record_interval, _retail_id, 'gy_retail_market_tran_summ', 'gy_retail_market_tran_summ', 'pf_num_id', _sel_prefix, _ins_prefix, _row_number), name='tran_Process')
-    p_payinforecords = Process(target=trans_push, args=(mysql_settings, oracle_settings, logger, _in_record_interval, _retail_id, 'payinfopos', 'gy_payinfopos', 'id', _sel_prefix, _ins_prefix, _row_number), name='payinfo_Process')
+    #p_payinforecords = Process(target=trans_push, args=(mysql_settings, oracle_settings, logger, _in_record_interval, _retail_id, 'payinfopos', 'gy_payinfopos', 'id', _sel_prefix, _ins_prefix, _row_number), name='payinfo_Process')
 
     p_tranrecords.start()
-    p_payinforecords.start()
+    #p_payinforecords.start()
 
     p_tranrecords.join()
-    p_payinforecords.join()
+    #p_payinforecords.join()
