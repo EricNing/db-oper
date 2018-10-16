@@ -1,10 +1,21 @@
+# -*- coding:utf-8 -*-
 from database.oracle import Oracle
 from database.mysql import Mysql
-oracle = Oracle(host='10.1.23.167', port=1521, user='book', password='book', sid='orcl')
-# oracle1 = Oracle(host='10.1.123.160', port=1521, user='cc330212333', password='peb2d2e131c0d', sid='prod')
-mysql = Mysql(host='10.1.23.167', port=3306, user='vgt', passwd='vgt201709', database='vegetable', charset='utf8')
+import os
+os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.UTF8'
+
+# oracle = Oracle(host='10.1.23.167', port=1521, user='book', password='book', sid='orcl')
+oracle = Oracle(host='10.1.123.160', port=1521, user='cc330212333', password='peb2d2e131c0d', sid='prod')
+# mysql = Mysql(host='10.1.23.167', port=3306, user='vgt', passwd='vgt201709', database='vegetable', charset='utf8')
+mysql = Mysql(host='10.23.48.200', port=3306, user='vgt', passwd='vgt201709', database='vegetable', charset='utf8')
 # mysql = Mysql(host='127.0.0.1', port=13306, user='vgt', passwd='vgt201709', database='vegetable', charset='utf8')
 
+res = oracle.select_all('select ecrid,busiid,ecrno,ecrtype,version,ip,insertdatetime from gy_ecrinfo')
+print res
+mysql.sync_data(res, 'test_ecrinfo', ['ecrid'.upper()], ['busiId'.upper(), 'ecrType'.upper()])
+# data = {'ECRID': '90011000', 'ECRTYPE': '\xcb\xae\xb9\xfb', 'NODE_ID': '330212333', 'STATUS': 0, 'UDT': None, 'BUSIID': '3302123331027', 'SERIALNO': None, 'CLASSIFYTYPE': 0, 'ECRNO': None, 'DDT': None, 'VERSION': None, 'INSERTDATETIME': None, 'STATUSSTARTTIME': None, 'IP': '10.333.42.3', 'RETAIL_ID': '330212333', 'OPENTAG': 0}
+# sql = 'select count(1) cnt from test_ecrinfo where ecrid=%(ecrid)s'
+# print mysql.check_record(data, 'test_ecrinfo', ['ecrId'.upper()])
 # res = oracle1.select_all('select * from gy_business_base_info')
 # oracle.insert_many('gy_business_base_info', res)
 #
@@ -19,7 +30,7 @@ mysql = Mysql(host='10.1.23.167', port=3306, user='vgt', passwd='vgt201709', dat
 # #mysql._cursor.executemany('update test_upd set name=%(name)s,value=%(value)s where id=%(id)s', [{'value': 15, 'id': 1, 'name': 'spark 3.0'}, {'value': 16, 'id': 2, 'name': 'hadoop 2.0'}])
 # mysql._conn.commit()
 
-value_dict = [{'value': 9, 'id': 1, 'name': 'spark 2.0'}, {'value': 8, 'id': 2, 'name': 'hadoop 2.2'}]
+# value_dict = [{'value': 9, 'id': 1, 'name': 'spark 2.0'}, {'value': 8, 'id': 2, 'name': 'hadoop 2.2'}]
 # mysql._cursor.executemany('delete from test_upd1 where id=%(id)s', value_dict)
 # mysql._conn.commit()
 # set_fields = ['value', 'name']
@@ -67,7 +78,7 @@ value_dict = [{'value': 9, 'id': 1, 'name': 'spark 2.0'}, {'value': 8, 'id': 2, 
 # res = mysql.check_record({'id': 4, 'name': 'ddd'}, 'tmp2', ['id'])
 # print res
 
-mysql.sync_data([{'id': 4, 'name': 'ddd'}, {'id': 5, 'name': 'fff'}], 'tmp2', ['id'], None)
+# mysql.sync_data([{'id': 4, 'name': 'ddd'}, {'id': 5, 'name': 'fff'}], 'tmp2', ['id'], None)
 
 # print oracle1._cursor.description
 # print len(res)

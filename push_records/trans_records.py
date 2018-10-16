@@ -32,7 +32,9 @@ class myProcess(object):
                 res = self.mysql_sel.select_all(sql)
                 _records = len(res)
                 if _records != 0:
-                    self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
+                    for i in res:
+                        self.oracle_ins.insert_one(self.ins_prefix + '.' + self.table_name_ins, i)
+                    # self.oracle_ins.insert_many(self.ins_prefix + '.' + self.table_name_ins, res)
                 self.logger.info("Max id of %s.%s is %s, insert %s records into %s.%s !" % (self.ins_prefix, self.table_name_ins, _max_id, _records, self.ins_prefix, self.table_name_ins))
             except Exception as e:
                 logger_info = 'execute sql error:\n%s' % (traceback.format_exc())

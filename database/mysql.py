@@ -108,6 +108,7 @@ class Mysql(object):
     def check_record(self, value_dict, table_name, where_fields):
         where_sql = ' and '.join(map(lambda x: '%s=%%(%s)s' % (x, x), where_fields))
         sql = 'select count(1) cnt from %s where %s' % (table_name, where_sql)
+        print sql
         self._cursor.execute(sql, value_dict)
         res = self._cursor.fetchone()
         self.commit()
