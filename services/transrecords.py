@@ -5,7 +5,7 @@
 import traceback
 import time
 
-class myProcess(object):
+class TranRecords(object):
     def __init__(self, mysql_sel, oracle_ins, logger, interval, retail_id, table_name_sel, table_name_ins, column_name, sel_prefix, ins_prefix, row_number):
         self.mysql_sel = mysql_sel
         self.oracle_ins = oracle_ins

@@ -108,7 +108,7 @@ class Mysql(object):
     def check_record(self, value_dict, table_name, where_fields):
         where_sql = ' and '.join(map(lambda x: '%s=%%(%s)s' % (x, x), where_fields))
         sql = 'select count(1) cnt from %s where %s' % (table_name, where_sql)
-        print sql
+        # print sql
         self._cursor.execute(sql, value_dict)
         res = self._cursor.fetchone()
         self.commit()
@@ -130,7 +130,7 @@ class Mysql(object):
         self.check_db_conn()
         for value_dict in value_dict_list:
             is_exists = self.check_record(value_dict, table_name, where_fields)
-            print is_exists
+            # print is_exists
             if is_exists is True:
                 """update records"""
                 self.update_one(value_dict, table_name, set_fields, where_fields)

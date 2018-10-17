@@ -8,7 +8,7 @@ from utils.log import get_logger
 from multiprocessing import Process
 import ConfigParser
 import os
-from push_records.trans_records import myProcess
+from services.transrecords import TranRecords
 
 os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.UTF8'
 
@@ -23,7 +23,7 @@ def trans_push(mysql_settings, oracle_settings, logger, tran_record_interval, re
                     user=oracle_settings['user'], password=oracle_settings['password'],
                     sid=oracle_settings['sid'], logger=log
                   )
-    trp = myProcess(mysql_sel, oracle_ins, log, tran_record_interval, retail_id, table_name_sel, table_name_ins, column_name, sel_prefix, ins_prefix, row_number)
+    trp = TranRecords(mysql_sel, oracle_ins, log, tran_record_interval, retail_id, table_name_sel, table_name_ins, column_name, sel_prefix, ins_prefix, row_number)
     trp.push()
 
 
