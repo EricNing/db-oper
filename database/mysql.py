@@ -152,7 +152,7 @@ class Mysql(object):
         # val_fields = ','.join(map(lambda x: '%s', value_dict.keys()))
         val_fields = ','.join(map(lambda x: '%%(%s)s' % x, value_dict.keys()))
         sql = 'insert into %s(%s) values(%s)' % (table_name, fields, val_fields)
-        print sql
+        # print sql
         self._cursor.execute(sql, value_dict)
         self.commit()
 

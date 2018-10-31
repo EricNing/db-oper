@@ -19,7 +19,7 @@ class TranRecords(object):
         self.ins_prefix = ins_prefix
         self.row_number = row_number
 
-    def push(self):
+    def push_datas(self):
         while True:
             try:
                 sql = "select max(%s) id from %s.%s where retail_id=%s" % (self.column_name, self.ins_prefix, self.table_name_ins, self.retail_id)
