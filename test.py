@@ -9,11 +9,11 @@ os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.UTF8'
 
 # select id, city_code, retail_id, retail_name, in_date, retailer_id, retailer_name, meat_batch_id, vege_batch_id, voucher_type, goods_code, goods_name, rec_goods_name, in_time, booth_num, electronic_id, goods_photo, serial_num, settlement_num, weight, price, area_origin_id, area_origin_name, ws_supplier_id, ws_supplier_name, update_time2, err, dt, update_time, num_id, sale_type, veg_id, upload_time from gy_retail_market_in_info
 if __name__ == "__main__":
-    # oracle = Oracle(host='10.1.23.167', port=1521, user='book', password='book', sid='orcl')
-    oracle = Oracle(host='10.1.123.160', port=1521, user='cc330212333', password='peb2d2e131c0d', sid='prod')
-    # mysql = Mysql(host='10.1.23.167', port=3306, user='vgt', passwd='vgt201709', database='vegetable', charset='utf8')
-    # mysql = Mysql(host='10.23.48.200', port=3306, user='vgt', passwd='vgt201709', database='vegetable', charset='utf8')
-    mysql = Mysql(host='127.0.0.1', port=13306, user='vgt', passwd='vgt201709', database='vegetable', charset='utf8')
+    # oracle = Oracle(host='*******', port=1521, user='book', password='book', sid='orcl')
+    oracle = Oracle(host='*******', port=1521, user='cc330212333', password='peb2d2e131c0d', sid='*******')
+    # mysql = Mysql(host='*******', port=3306, user='vgt', passwd='*******', database='vegetable', charset='utf8')
+    # mysql = Mysql(host='*******', port=3306, user='vgt', passwd='*******', database='vegetable', charset='utf8')
+    mysql = Mysql(host='127.0.0.1', port=13306, user='vgt', passwd='*******', database='vegetable', charset='utf8')
 
     sql = 'select max(pf_num_id) ID from vegetable.gy_retail_market_in_info'
     res = mysql.select_one(sql)
